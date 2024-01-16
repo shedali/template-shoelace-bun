@@ -1,12 +1,11 @@
 {
-	"name": "Bun",
-	"image": "oven/bun:1",
-	"settings": {
-		"terminal.integrated.shell.linux": "/bin/bash"
-	},
-	"extensions": [
-		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode"
-	],
-	"postCreateCommand": "npm install"
+    "name": "Bun",
+    "image": "ghcr.io/nhaef/devcontainer-bun:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    }
 }
