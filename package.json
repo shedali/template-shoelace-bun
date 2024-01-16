@@ -1,0 +1,22 @@
+{
+  "name": "@jpmorganio-accelerator/shoelace-bun",
+  "module": "index.ts",
+  "type": "module",
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.12.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.1",
+    "bun-types": "latest",
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "react": "^18.2.0"
+  },
+  "scripts": {
+    "build": "tsc && bun build ./src/* --outdir ./build/src --splitting --minify --target browser --sourcemap --external react"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
